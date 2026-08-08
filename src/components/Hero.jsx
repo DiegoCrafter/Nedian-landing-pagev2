@@ -23,7 +23,7 @@ export default function Hero() {
           la sierra de Ayacucho
         </h1>
         <p className="hero-sub">
-          De Huanta a Lucanas, somos los constructores de confianza de la región desde hace más de 12
+          Desde Huanca Sancos, somos los constructores de confianza de la región desde hace más de 12
           años: proyectos puntuales, a buen precio y con la fiabilidad de la piedra de los Andes.
         </p>
 

@@ -46,8 +46,8 @@ function OfficeMap() {
           <Icon name="pin" size={20} />
         </span>
         <div>
-          <strong>Nedian S.A.C. · Huamanga</strong>
-          <span>Av. Los Libertadores 1234, Ayacucho</span>
+          <strong>Nedian S.A.C. · Huanca Sancos</strong>
+          <span>Jr. Arica SN Huanca Sancos, Ayacucho</span>
         </div>
       </div>
     </div>
@@ -70,12 +70,12 @@ const LIST = [
   {
     icon: 'clock',
     label: 'Horario de atención',
-    value: 'Lun – Sáb · 8:00 am – 6:00 pm',
+    value: 'Lun – Vier · 8:00 am – 6:00 pm',
   },
   {
     icon: 'pin',
     label: 'Nuestra oficina en Ayacucho',
-    value: 'Av. Los Libertadores 1234, Ayacucho – Huamanga, Perú',
+    value: 'Jr. Arica SN, Ayacucho – Huanca Sancos, Perú',
   },
 ]
 

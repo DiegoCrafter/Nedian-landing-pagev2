@@ -15,7 +15,7 @@ export default function Team() {
             Los mejores profesionales de la construcción de la región
           </h2>
           <p data-reveal style={{ '--d': '.1s' }}>
-            Ingenieros colegiados, maestros de obra y personal técnico que conoce la sierra como nadie.
+            Ingenieros colegiados, personal técnico que conoce la sierra como nadie.
           </p>
         </div>
         <div className="team-grid">

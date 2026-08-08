@@ -3,13 +3,13 @@
 // ============================================================
 
 export const CONTACT = {
-  phone: '+51 966 123 456',
-  phoneHref: '+51966123456',
+  phone: '+51 958 206 591',
+  phoneHref: '+51958206591',
   whatsapp:
-    'https://wa.me/51966123456?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20construcci%C3%B3n',
-  email: 'contacto@nediansac.com',
-  address: 'Av. Los Libertadores 1234, Ayacucho – Huamanga, Perú',
-  hours: 'Lunes a Sábado · 8:00 am – 6:00 pm',
+    'https://wa.me/51958206591?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20construcci%C3%B3n',
+  email: 'nediansac@gmail.com',
+  address: 'Jr Arica SN Huanca Sancos, Ayacucho, Perú',
+  hours: 'Lunes a Viernes · 8:00 am – 6:00 pm',
 }
 
 export const NAV_LINKS = [
@@ -36,10 +36,10 @@ export const ABOUT_IMG = 'assets/about.jpg'
 export const SERVICES_PHOTOS = ['assets/svc-1.jpg', 'assets/svc-2.jpg', 'assets/svc-3.jpg']
 
 export const HERO_AVATARS = [
-  { initials: 'ND' },
-  { initials: 'MP' },
-  { initials: 'VQ' },
-  { initials: 'RC' },
+  { initials: 'NP' },
+  { initials: 'AH' },
+  { initials: 'EH' },
+  { initials: 'DH' },
 ]
 
 export const REVIEWS = [
@@ -94,36 +94,30 @@ export const SERVICES = [
 
 export const TEAM = [
   {
-    name: 'Ing. Néstor Díaz',
+    name: 'Ing. Nesias Pagan',
     role: 'Gerente General',
     bio: 'Ingeniero civil colegiado con más de 15 años liderando obras públicas y privadas en la región.',
-    initials: 'ND',
+    initials: 'NP',
   },
   {
-    name: 'Ing. Marco Pérez',
+    name: 'Eldelberto Huarcaya',
     role: 'Ingeniero Residente',
     bio: 'Responsable de la ejecución técnica de proyectos y del control de calidad en cada etapa de obra.',
-    initials: 'MP',
+    initials: 'EH',
   },
   {
-    name: 'Victor Quispe',
+    name: 'Angel Huarcaya',
     role: 'Maestro de Obra',
     bio: 'Obrero calificado con experiencia en construcción en altura, adobe reforzado y albañilería.',
-    initials: 'VQ',
-  },
-  {
-    name: 'Ing. Rosa Cárdenas',
-    role: 'Supervisora de Seguridad',
-    bio: 'Especialista en seguridad y salud en el trabajo, garantiza el cumplimiento del SCTR y las normas vigentes.',
-    initials: 'RC',
-  },
+    initials: 'AH',
+  }
 ]
 
 export const OFFICE_INFO = [
   {
     icon: 'pin',
     title: 'Oficina',
-    lines: ['Av. Los Libertadores 1234', 'Ayacucho – Huamanga, Perú'],
+    lines: ['Jr. Arica SN', 'Ayacucho – Huanca Sancos, Perú'],
   },
   {
     icon: 'phone',
@@ -133,7 +127,7 @@ export const OFFICE_INFO = [
   {
     icon: 'mail',
     title: 'Correo',
-    lines: ['contacto@nediansac.com'],
+    lines: ['nediansac@gmail.com'],
   },
   {
     icon: 'clock',
