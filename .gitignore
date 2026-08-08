@@ -3,8 +3,7 @@
 
 # Node / React
 node_modules/
-react/node_modules/
-react/dist/
+dist/
 
 # Logs
 *.log
