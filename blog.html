@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Servicios Generales Nedian S.A.C.</title>
+<meta name="description" content="Noticias, obras y novedades de Servicios Generales Nedian S.A.C., empresa constructora de la sierra de Ayacucho.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Servicios Generales Nedian S.A.C.">
+      <img class="brand-logo" src="assets/logo.jpg" alt="Servicios Generales Nedian S.A.C.">
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="index.html#contacto" class="btn btn-primary nav-cta">Cotizar ahora</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ CABECERA ============ -->
+<section class="page-head">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Ruta de navegación"><a href="index.html">Inicio</a> / Blog</nav>
+    <span class="overline">Noticias y obras</span>
+    <h1>Blog de Nedian</h1>
+    <p>Historias de nuestras obras, avances de proyectos y novedades de la empresa en la sierra de Ayacucho.</p>
+  </div>
+</section>
+
+<!-- ============ LISTADO ============ -->
+<section class="blog-section">
+  <div class="container">
+    <div id="featuredWrap"></div>
+    <div class="filters">
+      <button class="chip on" data-filter="todos">Todos</button>
+      <div id="catChips"></div>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Buscar noticias..." aria-label="Buscar noticias">
+      </div>
+    </div>
+    <div class="blog-grid" id="postsGrid"></div>
+    <div class="empty-state" id="emptyState" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <p><strong>No se encontraron noticias.</strong><br>Prueba con otra categoría o búsqueda.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="margin-bottom:8px">
+          <img class="brand-logo" src="assets/logo.jpg" alt="Servicios Generales Nedian S.A.C.">
+        </a>
+        <p>Empresa ayacuchana dedicada a la construcción y servicios generales en la sierra de Ayacucho. Calidad, seguridad y compromiso con nuestra tierra.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V9h4v1.5A6 6 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Enlaces</h3>
+        <ul class="foot-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Servicios</h3>
+        <ul class="foot-links">
+          <li><a href="index.html#servicios">Edificaciones</a></li>
+          <li><a href="index.html#servicios">Infraestructura vial</a></li>
+          <li><a href="index.html#servicios">Saneamiento</a></li>
+          <li><a href="index.html#servicios">Movimiento de tierras</a></li>
+          <li><a href="index.html#servicios">Consultoría</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul class="foot-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Av. Los Libertadores 1234, Ayacucho – Huamanga</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+51 966 123 456</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>contacto@nediansac.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © <span id="year">2026</span> Servicios Generales Nedian S.A.C. Todos los derechos reservados. · Ayacucho – Perú
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOTANTES ============ -->
+<a class="wa-float" href="https://wa.me/51966123456?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20construcci%C3%B3n" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script>
+(function(){
+  'use strict';
+  var header = document.getElementById('header');
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    var y = window.scrollY;
+    header.classList.toggle('is-scrolled', y > 40);
+    toTop.classList.toggle('show', y > 600);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  var burger = document.getElementById('burger');
+  var mainNav = document.getElementById('mainNav');
+  function closeMenu(){ mainNav.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  burger.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mainNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Blog ---------- */
+  var posts = [];
+  var activeFilter = 'todos';
+  var searchTerm = '';
+
+  function fmtDate(d){
+    var dt = new Date(d + 'T12:00:00');
+    return dt.toLocaleDateString('es-PE', {day:'numeric', month:'long', year:'numeric'});
+  }
+
+  function cardHtml(p){
+    return '<article class="post-card">' +
+      '<a class="thumb" href="post.html?slug=' + encodeURIComponent(p.slug) + '"><span class="cat">' + p.category + '</span><img src="' + p.cover + '" alt="' + p.title + '" loading="lazy"></a>' +
+      '<div class="body">' +
+        '<div class="meta"><span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>' + fmtDate(p.date) + '</span></div>' +
+        '<h3><a href="post.html?slug=' + encodeURIComponent(p.slug) + '">' + p.title + '</a></h3>' +
+        '<p>' + p.excerpt + '</p>' +
+        '<a class="readmore" href="post.html?slug=' + encodeURIComponent(p.slug) + '">Leer más <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>' +
+      '</div></article>';
+  }
+
+  function render(){
+    var list = posts.filter(function(p){
+      var okCat = activeFilter === 'todos' || p.category === activeFilter;
+      var okSearch = !searchTerm || (p.title + ' ' + p.excerpt + ' ' + p.category).toLowerCase().indexOf(searchTerm) !== -1;
+      return okCat && okSearch;
+    });
+
+    var featuredWrap = document.getElementById('featuredWrap');
+    var grid = document.getElementById('postsGrid');
+    var empty = document.getElementById('emptyState');
+    featuredWrap.innerHTML = '';
+    grid.innerHTML = '';
+
+    if(!list.length){
+      empty.hidden = false;
+      return;
+    }
+    empty.hidden = true;
+
+    // featured = most recent of the filtered set (only when no filter/search active)
+    var featured = null;
+    if(activeFilter === 'todos' && !searchTerm){
+      featured = list[0];
+      list = list.slice(1);
+      featuredWrap.innerHTML =
+        '<article class="featured">' +
+          '<a class="thumb" href="post.html?slug=' + encodeURIComponent(featured.slug) + '"><span class="cat">' + featured.category + '</span><img src="' + featured.cover + '" alt="' + featured.title + '"></a>' +
+          '<div class="body">' +
+            '<div class="meta"><span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>' + fmtDate(featured.date) + '</span></div>' +
+            '<h2><a href="post.html?slug=' + encodeURIComponent(featured.slug) + '">' + featured.title + '</a></h2>' +
+            '<p>' + featured.excerpt + '</p>' +
+            '<a class="readmore" href="post.html?slug=' + encodeURIComponent(featured.slug) + '">Leer artículo completo <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>' +
+          '</div></article>';
+    }
+    grid.innerHTML = list.map(cardHtml).join('');
+
+    if(!list.length && featuredWrap.innerHTML){
+      // only featured visible: show a subtle hint? not needed
+    }
+  }
+
+  fetch('posts.json').then(function(r){
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then(function(data){
+    posts = (data.posts || []).slice().sort(function(a,b){ return b.date.localeCompare(a.date); });
+    // category chips
+    var cats = ['Todos'].concat(Array.from(new Set(posts.map(function(p){ return p.category; }))));
+    var chipsHtml = cats.map(function(c, i){
+      if(i === 0) return '';
+      return '<button class="chip" data-filter="' + c + '">' + c + '</button>';
+    }).join('');
+    document.getElementById('catChips').innerHTML = chipsHtml;
+    document.querySelectorAll('#catChips .chip').forEach(function(ch){
+      ch.addEventListener('click', function(){
+        activeFilter = ch.getAttribute('data-filter');
+        document.querySelectorAll('.filters .chip').forEach(function(c){ c.classList.remove('on'); });
+        ch.classList.add('on');
+        render();
+      });
+    });
+    render();
+  }).catch(function(e){
+    document.getElementById('emptyState').hidden = false;
+    document.getElementById('emptyState').querySelector('strong').textContent = 'No se pudo cargar el blog.';
+    console.error('Error cargando posts.json:', e);
+  });
+
+  document.getElementById('searchInput').addEventListener('input', function(){
+    searchTerm = this.value.trim().toLowerCase();
+    render();
+  });
+})();
+</script>
+</body>
+</html>
