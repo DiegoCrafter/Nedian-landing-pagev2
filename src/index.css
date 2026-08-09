@@ -1562,7 +1562,9 @@ footer h3 {
   background: var(--bg-dark);
   color: #fff;
   text-align: center;
-  padding-block: clamp(72px, 9vw, 110px);
+  /* El top compensa el header fijo (var(--header-h)) — sin esto el contenido queda tapado en móvil */
+  padding-top: calc(var(--header-h) + clamp(36px, 6vw, 58px));
+  padding-bottom: clamp(72px, 9vw, 110px);
 }
 .obras-hero .overline {
   color: var(--brand-light);
@@ -1772,7 +1774,9 @@ footer h3 {
   position: relative;
   isolation: isolate;
   color: #fff;
-  padding-block: clamp(64px, 8vw, 110px);
+  /* El top compensa el header fijo (var(--header-h)) — sin esto el breadcrumb queda tapado en móvil */
+  padding-top: calc(var(--header-h) + clamp(32px, 5vw, 52px));
+  padding-bottom: clamp(64px, 8vw, 110px);
   background-color: var(--bg-dark);
   background-image: var(--hero-img);
   background-size: cover;
