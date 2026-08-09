@@ -1590,8 +1590,13 @@ footer h3 {
   line-height: 1.65;
 }
 .obras-back {
-  display: inline-flex;
+  /* flex (block-level) para que no comparta línea con el overline: ambos eran inline-flex
+     y en ventanas anchas se centraban como unidad, quedando "Volver al inicio" descuadrado */
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-inline: auto;
   gap: 8px;
   color: var(--muted-dark);
   font-size: 0.9rem;
