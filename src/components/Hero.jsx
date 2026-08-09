@@ -1,9 +1,20 @@
 import { useState } from 'react'
 import Icon from './Icon.jsx'
-import { HERO_AVATARS, REVIEWS } from '../data.js'
+import { CERTS, CONTACT, HERO_AVATARS, REVIEWS } from '../data.js'
 
 export default function Hero() {
   const [sent, setSent] = useState(false)
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    const fd = new FormData(e.target)
+    const msg = `Hola Nedian S.A.C., quiero solicitar una consultoría de construcción.%0A%0A
+      Mi correo es: ${fd.get('email') || 'no indicado'}`.replace(/\s*\n\s*/g, '%0A')
+    window.open(`https://wa.me/${CONTACT.phoneHref.replace('+', '')}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener')
+    setSent(true)
+    e.target.reset()
+    setTimeout(() => setSent(false), 5000)
+  }
 
   return (
     <section className="hero" id="inicio">
@@ -27,15 +38,7 @@ export default function Hero() {
           años: proyectos puntuales, a buen precio y con la fiabilidad de la piedra de los Andes.
         </p>
 
-        <form
-          className="hero-form"
-          onSubmit={(e) => {
-            e.preventDefault()
-            setSent(true)
-            e.target.reset()
-            setTimeout(() => setSent(false), 5000)
-          }}
-        >
+        <form className="hero-form" onSubmit={handleSubmit}>
           <input
             type="email"
             name="email"
@@ -59,6 +62,16 @@ export default function Hero() {
             <strong>12+ Especialistas en construcción</strong>
             <span>Dedicados al éxito de tu proyecto</span>
           </div>
+        </div>
+
+        <div className="hero-certs" aria-label="Certificaciones ISO">
+          {CERTS.map((c) => (
+            <div className="cert-badge" key={c.iso}>
+              <Icon name="shield" size={15} />
+              <span className="cert-iso">{c.iso}</span>
+              <span className="cert-label">{c.label}</span>
+            </div>
+          ))}
         </div>
 
         <div className="hero-reviews">

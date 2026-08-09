@@ -7,6 +7,7 @@ import Office from './components/Office.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Cta from './components/Cta.jsx'
 import Faq from './components/Faq.jsx'
+import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Testimonials />
         <Cta />
         <Faq />
+        <Contact />
       </main>
       <Footer />
     </>

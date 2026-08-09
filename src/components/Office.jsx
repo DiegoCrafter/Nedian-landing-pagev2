@@ -82,7 +82,7 @@ const LIST = [
 export default function Office() {
   const ref = useReveal()
   return (
-    <section className="section section-office" id="contacto" ref={ref}>
+    <section className="section section-office" id="oficina" ref={ref}>
       <div className="container office-grid">
         <div className="office-copy">
           <span className="overline" data-reveal>

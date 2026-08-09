@@ -35,6 +35,14 @@ export const ABOUT_IMG = 'assets/about.jpg'
 // Fotos reales de la columna izquierda de servicios
 export const SERVICES_PHOTOS = ['assets/svc-1.jpg', 'assets/svc-2.jpg', 'assets/svc-3.jpg']
 
+// Certificaciones ISO del sistema integrado de gestión (badges del hero)
+export const CERTS = [
+  { iso: 'ISO 9001', label: 'Calidad' },
+  { iso: 'ISO 45001', label: 'Seguridad y salud' },
+  { iso: 'ISO 14001', label: 'Medio ambiente' },
+  { iso: 'ISO 37001', label: 'Antisoborno' },
+]
+
 export const HERO_AVATARS = [
   { initials: 'NP' },
   { initials: 'AH' },
