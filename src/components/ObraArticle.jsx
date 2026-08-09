@@ -213,8 +213,8 @@ export default function ObraArticle({ tag }) {
       {/* Barra de progreso de lectura */}
       <div className="read-progress" style={{ transform: `scaleX(${progress})` }} aria-hidden="true" />
 
-      {/* Hero con foto de fondo */}
-      <section className="article-hero" style={{ '--hero-img': `url(${obra.img})` }}>
+      {/* Hero con foto de fondo — URL absoluta: las url() de variables CSS se resuelven contra el CSS, no el documento */}
+      <section className="article-hero" style={{ '--hero-img': `url(${siteBase()}${obra.img})` }}>
         <div className="ah-veil" aria-hidden="true" />
         <div className="container ah-inner">
           <nav className="ah-breadcrumb" aria-label="Ruta de navegación">
