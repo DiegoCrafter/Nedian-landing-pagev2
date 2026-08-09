@@ -5,9 +5,21 @@ import { useHeader } from '../hooks.js'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
-  const { active } = useHeader(NAV_LINKS.map((l) => l.href))
+  const sectionLinks = NAV_LINKS.map((l) => l.href).filter((h) => !h.startsWith('#/'))
+  const { active } = useHeader(sectionLinks)
 
   const close = () => setOpen(false)
+
+  // Al navegar a una sección desde la vista Obras: volver al inicio y scrollear
+  const goSection = (href) => (e) => {
+    close()
+    if (href.startsWith('#/')) return
+    if (window.location.hash.startsWith('#/')) {
+      e.preventDefault()
+      window.location.hash = '#/'
+      setTimeout(() => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }), 200)
+    }
+  }
 
   return (
     <header id="header" className="header">
@@ -20,13 +32,13 @@ export default function Navbar() {
           <ul>
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className={active === l.href ? 'active' : ''} onClick={close}>
+                <a href={l.href} className={active === l.href ? 'active' : ''} onClick={goSection(l.href)}>
                   {l.label}
                 </a>
               </li>
             ))}
             <li>
-              <a href="#contacto" className="btn btn-brand nav-cta" onClick={close}>
+              <a href="#contacto" className="btn btn-brand nav-cta" onClick={goSection('#contacto')}>
                 Cotizar ahora
                 <Icon name="chevron" size={14} />
               </a>

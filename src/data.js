@@ -16,6 +16,7 @@ export const NAV_LINKS = [
   { href: '#inicio', label: 'Inicio' },
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#servicios', label: 'Servicios' },
+  { href: '#/obras', label: 'Obras' },
   { href: '#equipo', label: 'Equipo' },
   { href: '#testimonios', label: 'Testimonios' },
   { href: '#faq', label: 'FAQ' },
@@ -41,6 +42,105 @@ export const CERTS = [
   { iso: 'ISO 45001', label: 'Seguridad y salud' },
   { iso: 'ISO 14001', label: 'Medio ambiente' },
   { iso: 'ISO 37001', label: 'Antisoborno' },
+]
+
+// Obras ejecutadas — vista "Obras" al estilo blog con artículo por obra
+export const OBRAS = [
+  {
+    tag: '01',
+    icon: 'building',
+    tipo: 'Infraestructura educativa y cultural',
+    title:
+      'Mejoramiento de capacidades educativas y culturales en los anexos de Colcabamba y Asca',
+    distrito: 'Sacsamarca',
+    provincia: 'Huanca Sancos',
+    img: 'assets/obras/o01-1.jpg',
+    gallery: ['assets/obras/o01-1.jpg', 'assets/obras/o01-2.jpg', 'assets/obras/o01-3.jpg'],
+    body: [
+      'El proyecto tuvo como objetivo mejorar las condiciones de aprendizaje y vida cultural en los anexos de Colcabamba y Asca, en el distrito de Sacsamarca. Se intervinieron ambientes existentes y se construyeron espacios nuevos, adecuados al clima y a las costumbres de la zona.',
+      'El equipo de Nedian S.A.C. trabajó junto a la comunidad desde la etapa de campo: levantamiento de información, replanteo y ejecución de las partidas de estructura, arquitectura e instalaciones. La mano de obra local fue priorizada, generando empleo directo durante toda la obra.',
+      'Hoy los anexos cuentan con espacios dignos para la educación y la cultura, fortaleciendo la permanencia de niños y jóvenes en la zona y el arraigo de las familias altoandinas.',
+    ],
+  },
+  {
+    tag: '02',
+    icon: 'pin',
+    tipo: 'Espacios públicos',
+    title: 'Creación de parque en la comunidad de San José de Huarcaya',
+    distrito: 'Santiago de Lucanamarca',
+    provincia: 'Huancasancos',
+    img: 'assets/obras/o02-1.jpg',
+    gallery: ['assets/obras/o02-1.jpg', 'assets/obras/o02-2.jpg', 'assets/obras/o02-3.jpg'],
+    body: [
+      'La comunidad de San José de Huarcaya, en Santiago de Lucanamarca, recibió un nuevo parque diseñado como punto de encuentro vecinal: áreas verdes, veredas, bancas e iluminación para el uso diario y las festividades locales.',
+      'El proceso incluyó el mejoramiento del terreno, la instalación de mobiliario urbano y el sembrado de áreas verdes adaptadas a la altura. Todo el trabajo se ejecutó con personal de la propia zona, bajo supervisión de ingenieros colegiados.',
+      'El parque se convirtió en el corazón social de la comunidad: un espacio seguro donde las familias comparten y los niños juegan cerca de casa.',
+    ],
+  },
+  {
+    tag: '03',
+    icon: 'award',
+    tipo: 'Losa deportiva multiusos',
+    title:
+      'Mejoramiento y acondicionamiento de la losa deportiva multiusos en la localidad de San Pedro de Palco',
+    distrito: 'San Pedro de Palco',
+    provincia: 'Lucanas',
+    img: 'assets/obras/o03-1.jpg',
+    gallery: ['assets/obras/o03-1.jpg', 'assets/obras/o03-2.jpg'],
+    body: [
+      'En San Pedro de Palco se mejoró y acondicionó la losa deportiva multiusos de la localidad: nivelación de la superficie, pintura de demarcaciones y mantenimiento integral para el uso deportivo de niños, jóvenes y adultos.',
+      'Los trabajos se realizaron minimizando la afectación al entorno y priorizando materiales de duración comprobada en la altura. La losa quedó lista para campeonatos locales, actividades escolares y eventos de la comunidad.',
+      'Contar con una losa en condiciones es clave para la vida saludable y la integración de los pueblos de Lucanas.',
+    ],
+  },
+  {
+    tag: '04',
+    icon: 'award',
+    tipo: 'Losa deportiva sintética',
+    title:
+      'Mejoramiento y ampliación de la losa deportiva sintética multiusos en la localidad de Santiago de Lucanamarca',
+    distrito: 'Santiago de Lucanamarca',
+    provincia: 'Huancasancos',
+    img: 'assets/obras/o04-1.jpg',
+    gallery: ['assets/obras/o04-1.jpg', 'assets/obras/o04-2.jpg'],
+    body: [
+      'La localidad de Santiago de Lucanamarca mejoró y amplió su losa deportiva sintética multiusos, una de las más utilizadas de la provincia. El proyecto consideró el mejoramiento del campo sintético y su ampliación para recibir más disciplinas deportivas.',
+      'Se ejecutaron las partidas de movimiento de tierras, mejoramiento de la base, instalación del césped sintético, demarcación y cerco perimétrico, con supervisión constante de calidad en cada etapa.',
+      'El resultado es un espacio deportivo moderno que beneficia a deportistas y a las instituciones educativas de la zona.',
+    ],
+  },
+  {
+    tag: '05',
+    icon: 'star',
+    tipo: 'Parque infantil',
+    title:
+      'Servicio de elaboración e instalación de juegos infantiles — creación de parque infantil en el centro poblado de Santa Rosa',
+    distrito: 'Santa Rosa',
+    provincia: 'La Mar',
+    img: 'assets/obras/o05-1.jpg',
+    gallery: ['assets/obras/o05-1.jpg', 'assets/obras/o05-2.jpg'],
+    body: [
+      'En el centro poblado de Santa Rosa, provincia de La Mar, se elaboraron e instalaron juegos infantiles como parte de la creación de un parque para los más pequeños: resbaladeras, columpios, sube y baja y pisos de seguridad.',
+      'Los juegos fueron fabricados con materiales resistentes y de bajo mantenimiento, y se instalaron sobre superficies amortiguadas que protegen a los niños en caso de caídas.',
+      'Este parque infantil ofrece a las familias de Santa Rosa un espacio seguro y alegre para la recreación de los niños del pueblo.',
+    ],
+  },
+  {
+    tag: '06',
+    icon: 'award',
+    tipo: 'Infraestructura deportiva',
+    title:
+      'Mejoramiento del servicio de práctica deportiva y/o recreativa en el centro poblado de Piriato',
+    distrito: 'Samugari',
+    provincia: 'La Mar',
+    img: 'assets/obras/o06-1.jpg',
+    gallery: ['assets/obras/o06-1.jpg', 'assets/obras/o06-2.jpg', 'assets/obras/o06-3.jpg'],
+    body: [
+      'En el centro poblado de Piriato, distrito de Samugari, se mejoró el servicio de práctica deportiva y recreativa de la comunidad. Las obras incluyeron el mejoramiento de la superficie de juego, graderías y áreas complementarias.',
+      'La ejecución consideró la participación de los beneficiarios y el cuidado del entorno natural de la selva alta, siguiendo las normas de seguridad en obra de nuestra empresa.',
+      'Piriato cuenta ahora con un espacio deportivo digno para el deporte, la recreación y las actividades de integración comunal.',
+    ],
+  },
 ]
 
 export const HERO_AVATARS = [
@@ -109,13 +209,13 @@ export const TEAM = [
   },
   {
     name: 'Eldelberto Huarcaya',
-    role: 'Ingeniero Residente',
+    role: 'Supervisor general',
     bio: 'Responsable de la ejecución técnica de proyectos y del control de calidad en cada etapa de obra.',
     initials: 'EH',
   },
   {
     name: 'Angel Huarcaya',
-    role: 'Maestro de Obra',
+    role: 'Jefe de maquinarias',
     bio: 'Obrero calificado con experiencia en construcción en altura, adobe reforzado y albañilería.',
     initials: 'AH',
   }
@@ -130,7 +230,7 @@ export const OFFICE_INFO = [
   {
     icon: 'phone',
     title: 'Teléfono / WhatsApp',
-    lines: ['+51 966 123 456', 'Respondemos el mismo día'],
+    lines: ['+51 958206591', 'Respondemos el mismo día'],
   },
   {
     icon: 'mail',
