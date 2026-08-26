@@ -9,7 +9,7 @@ export default function Services() {
   const ref = useReveal()
   const items = []
   for (let i = 0; i < 3; i++) {
-    items.push({ type: 'photo', img: SERVICES_PHOTOS[i] })
+    items.push({ type: 'photo', img: SERVICES_PHOTOS[i], photoIndex: i })
     items.push({ type: 'card', service: SERVICES[i * 2] })
     items.push({ type: 'card', service: SERVICES[i * 2 + 1] })
   }
@@ -38,7 +38,7 @@ export default function Services() {
                 data-reveal
                 style={{ '--d': `${(i % 3) * 0.08}s` }}
               >
-                <img src={item.img} alt="" loading="lazy" />
+                <img src={item.img} alt={`Servicio de construcción Nedian S.A.C. - Foto ${item.photoIndex + 1}`} loading="lazy" />
               </article>
             ) : (
               <article
