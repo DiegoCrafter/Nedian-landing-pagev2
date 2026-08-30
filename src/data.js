@@ -33,15 +33,54 @@ export const STATS = [
 // Foto grande del bloque Nosotros (foto real de obra, cartel NEDIAN visible)
 export const ABOUT_IMG = 'assets/about.jpg'
 
+// Misión, visión y valores del bloque Nosotros
+export const MVV = [
+  {
+    icon: 'clipboard',
+    title: 'Misión',
+    text: 'Ejecutar proyectos de arquitectura y obra civil, públicos y privados, satisfaciendo las necesidades de nuestros clientes antes, durante y después de la obra, con estándares de calidad y plazos cumplidos.',
+  },
+  {
+    icon: 'award',
+    title: 'Visión',
+    text: 'Ser la empresa constructora líder de Ayacucho, reconocida por la calidad de sus obras, la transparencia de su gestión y su aporte al desarrollo de las comunidades.',
+  },
+  {
+    icon: 'shield',
+    title: 'Valores',
+    text: 'Integridad, calidad, seguridad, compromiso con la comunidad y respeto por el medio ambiente guían cada decisión y cada obra que ejecutamos.',
+  },
+]
+
 // Fotos reales de la columna izquierda de servicios
 export const SERVICES_PHOTOS = ['assets/svc-1.jpg', 'assets/svc-2.jpg', 'assets/svc-3.jpg']
 
 // Certificaciones ISO del sistema integrado de gestión (badges del hero)
 export const CERTS = [
-  { iso: 'ISO 9001', label: 'Calidad' },
-  { iso: 'ISO 45001', label: 'Seguridad y salud' },
-  { iso: 'ISO 14001', label: 'Medio ambiente' },
-  { iso: 'ISO 37001', label: 'Antisoborno' },
+  {
+    iso: 'ISO 9001',
+    label: 'Calidad',
+    img: 'assets/certs/iso-9001.svg',
+    desc: 'Sistema de gestión de calidad que asegura procesos estandarizados y mejora continua en cada proyecto.',
+  },
+  {
+    iso: 'ISO 45001',
+    label: 'Seguridad y salud',
+    img: 'assets/certs/iso-45001.svg',
+    desc: 'Gestión de seguridad y salud ocupacional que protege a nuestro equipo en cada frente de obra.',
+  },
+  {
+    iso: 'ISO 14001',
+    label: 'Medio ambiente',
+    img: 'assets/certs/iso-14001.svg',
+    desc: 'Gestión ambiental responsable que minimiza el impacto de nuestras obras en la sierra.',
+  },
+  {
+    iso: 'ISO 37001',
+    label: 'Antisoborno',
+    img: 'assets/certs/iso-37001.svg',
+    desc: 'Sistema antisoborno que garantiza transparencia e integridad en todas nuestras contrataciones.',
+  },
 ]
 
 // Obras ejecutadas — vista "Obras" al estilo blog con artículo por obra
@@ -86,7 +125,7 @@ export const OBRAS = [
     distrito: 'San Pedro de Palco',
     provincia: 'Lucanas',
     img: 'assets/obras/o03-1.jpg',
-    gallery: ['assets/obras/o03-1.jpg', 'assets/obras/o03-2.jpg'],
+    gallery: ['assets/obras/o03-1.jpg', 'assets/obras/o03-2.jpg', 'assets/obras/o03-3.jpg'],
     body: [
       'En San Pedro de Palco se mejoró y acondicionó la losa deportiva multiusos de la localidad: nivelación de la superficie, pintura de demarcaciones y mantenimiento integral para el uso deportivo de niños, jóvenes y adultos.',
       'Los trabajos se realizaron minimizando la afectación al entorno y priorizando materiales de duración comprobada en la altura. La losa quedó lista para campeonatos locales, actividades escolares y eventos de la comunidad.',
@@ -102,7 +141,7 @@ export const OBRAS = [
     distrito: 'Santiago de Lucanamarca',
     provincia: 'Huancasancos',
     img: 'assets/obras/o04-1.jpg',
-    gallery: ['assets/obras/o04-1.jpg', 'assets/obras/o04-2.jpg'],
+    gallery: ['assets/obras/o04-1.jpg', 'assets/obras/o04-2.jpg', 'assets/obras/o04-3.jpg'],
     body: [
       'La localidad de Santiago de Lucanamarca mejoró y amplió su losa deportiva sintética multiusos, una de las más utilizadas de la provincia. El proyecto consideró el mejoramiento del campo sintético y su ampliación para recibir más disciplinas deportivas.',
       'Se ejecutaron las partidas de movimiento de tierras, mejoramiento de la base, instalación del césped sintético, demarcación y cerco perimétrico, con supervisión constante de calidad en cada etapa.',
@@ -118,7 +157,7 @@ export const OBRAS = [
     distrito: 'Santa Rosa',
     provincia: 'La Mar',
     img: 'assets/obras/o05-1.jpg',
-    gallery: ['assets/obras/o05-1.jpg', 'assets/obras/o05-2.jpg'],
+    gallery: ['assets/obras/o05-1.jpg', 'assets/obras/o05-2.jpg', 'assets/obras/o05-3.jpg'],
     body: [
       'En el centro poblado de Santa Rosa, provincia de La Mar, se elaboraron e instalaron juegos infantiles como parte de la creación de un parque para los más pequeños: resbaladeras, columpios, sube y baja y pisos de seguridad.',
       'Los juegos fueron fabricados con materiales resistentes y de bajo mantenimiento, y se instalaron sobre superficies amortiguadas que protegen a los niños en caso de caídas.',
@@ -134,7 +173,7 @@ export const OBRAS = [
     distrito: 'Samugari',
     provincia: 'La Mar',
     img: 'assets/obras/o06-1.jpg',
-    gallery: ['assets/obras/o06-1.jpg', 'assets/obras/o06-2.jpg', 'assets/obras/o06-3.jpg'],
+    gallery: ['assets/obras/o06-1.jpg', 'assets/obras/o06-2.jpg', 'assets/obras/o06-3.jpg', 'assets/obras/o06-4.jpg'],
     body: [
       'En el centro poblado de Piriato, distrito de Samugari, se mejoró el servicio de práctica deportiva y recreativa de la comunidad. Las obras incluyeron el mejoramiento de la superficie de juego, graderías y áreas complementarias.',
       'La ejecución consideró la participación de los beneficiarios y el cuidado del entorno natural de la selva alta, siguiendo las normas de seguridad en obra de nuestra empresa.',
@@ -224,8 +263,13 @@ export const TEAM = [
 export const OFFICE_INFO = [
   {
     icon: 'pin',
-    title: 'Oficina',
+    title: 'Oficina Huanca Sancos',
     lines: ['Jr. Arica SN', 'Ayacucho – Huanca Sancos, Perú'],
+  },
+  {
+    icon: 'pin',
+    title: 'Oficina Huamanga',
+    lines: ['Jr. Huaraz, Carmen Alto', 'Ayacucho – Huamanga, Perú'],
   },
   {
     icon: 'phone',
@@ -271,7 +315,7 @@ export const TESTIMONIALS = [
 export const FAQS = [
   {
     q: '¿Qué tipos de proyectos ejecutan?',
-    a: 'Trabajamos obras públicas y privadas: edificaciones, infraestructura vial, obras hidráulicas y saneamiento, movimiento de tierras, remodelación y consultoría, en toda la sierra de Ayacucho.',
+    a: 'Trabajamos obras públicas y privadas: edificaciones, infraestructura vial, obras hidráulicas y saneamiento, movimiento de tierras, remodelación y consultoría, en toda Ayacucho.',
   },
   {
     q: '¿Cómo manejan las condiciones climáticas de altura durante la obra?',

@@ -1,5 +1,5 @@
 import Icon from './Icon.jsx'
-import { ABOUT_IMG, STATS, TRUST_ITEMS } from '../data.js'
+import { ABOUT_IMG, MVV, STATS, TRUST_ITEMS } from '../data.js'
 import { useCountUp, useReveal } from '../hooks.js'
 
 function Stat({ value, suffix, label }) {
@@ -59,6 +59,18 @@ export default function About() {
         <figure className="about-photo" data-reveal style={{ '--d': '.1s' }}>
           <img src={ABOUT_IMG} alt="Obra de construcción ejecutada por Nedian S.A.C." loading="lazy" />
         </figure>
+      </div>
+
+      <div className="container about-mvv">
+        {MVV.map((m, i) => (
+          <article className="mvv-card" key={m.title} data-reveal style={{ '--d': `${i * 0.08}s` }}>
+            <span className="mvv-icon">
+              <Icon name={m.icon} size={24} />
+            </span>
+            <h3>{m.title}</h3>
+            <p>{m.text}</p>
+          </article>
+        ))}
       </div>
     </section>
   )

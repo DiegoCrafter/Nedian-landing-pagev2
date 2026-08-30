@@ -46,8 +46,9 @@ function OfficeMap() {
           <Icon name="pin" size={20} />
         </span>
         <div>
-          <strong>Nedian S.A.C. · Huanca Sancos</strong>
-          <span>Jr. Arica SN Huanca Sancos, Ayacucho</span>
+          <strong>Nedian S.A.C.</strong>
+          <span>Jr. Arica SN, Huanca Sancos</span>
+          <span>Jr. Huaraz, Carmen Alto, Huamanga</span>
         </div>
       </div>
     </div>
@@ -74,8 +75,13 @@ const LIST = [
   },
   {
     icon: 'pin',
-    label: 'Nuestra oficina en Ayacucho',
+    label: 'Oficina en Huanca Sancos',
     value: 'Jr. Arica SN, Ayacucho – Huanca Sancos, Perú',
+  },
+  {
+    icon: 'pin',
+    label: 'Oficina en Huamanga',
+    value: 'Jr. Huaraz, Carmen Alto, Ayacucho – Huamanga, Perú',
   },
 ]
 

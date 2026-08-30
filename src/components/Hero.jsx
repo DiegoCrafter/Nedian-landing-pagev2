@@ -31,7 +31,7 @@ export default function Hero() {
 
         <h1>
           Usamos experiencia local para entregar una construcción <em>más fuerte e inteligente</em> en
-          la sierra de Ayacucho
+          Ayacucho
         </h1>
         <p className="hero-sub">
           Desde Huanca Sancos, somos los constructores de confianza de la región desde hace más de 12

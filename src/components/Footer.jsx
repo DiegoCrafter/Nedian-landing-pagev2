@@ -22,7 +22,7 @@ export default function Footer() {
                 <img className="brand-logo" src="assets/logo.jpg" alt="Servicios Generales Nedian S.A.C." />
               </a>
               <p>
-                Construyendo en la sierra de Ayacucho desde 2012. Calidad, seguridad y compromiso con
+                Construyendo en Ayacucho desde 2012. Calidad, seguridad y compromiso con
                 nuestra tierra.
               </p>
             </div>

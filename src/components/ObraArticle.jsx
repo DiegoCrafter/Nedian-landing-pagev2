@@ -83,7 +83,7 @@ export default function ObraArticle({ tag }) {
         if (el && content !== undefined) el.setAttribute('content', content)
         else if (el && content === undefined) el.remove()
       })
-      document.title = 'Servicios Generales Nedian S.A.C. | Construcción en la Sierra de Ayacucho'
+      document.title = 'Servicios Generales Nedian S.A.C. | Construcción en Ayacucho'
     }
   }, [tag, obra])
 
@@ -395,7 +395,7 @@ export default function ObraArticle({ tag }) {
                 <h3>Cotiza tu obra con Nedian S.A.C.</h3>
                 <p>
                   Te asesoramos sin compromiso, con la experiencia de más de 12 años construyendo en
-                  la sierra de Ayacucho.
+                  Ayacucho.
                 </p>
               </div>
             </div>

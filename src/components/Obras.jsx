@@ -18,7 +18,7 @@ export default function Obras() {
             Obras que construyen <em>comunidades</em>
           </h1>
           <p>
-            Proyectos ejecutados en la sierra de Ayacucho: infraestructura educativa, espacios
+            Proyectos ejecutados en Ayacucho: infraestructura educativa, espacios
             públicos, losas deportivas y recreación para las familias de la región. Haz clic en una
             obra para leer su artículo completo.
           </p>

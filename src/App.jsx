@@ -1,17 +1,21 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Services from './components/Services.jsx'
+import Certifications from './components/Certifications.jsx'
 import Team from './components/Team.jsx'
 import Office from './components/Office.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Cta from './components/Cta.jsx'
 import Faq from './components/Faq.jsx'
 import Contact from './components/Contact.jsx'
-import Obras from './components/Obras.jsx'
-import ObraArticle from './components/ObraArticle.jsx'
+import CookieBanner from './components/CookieBanner.jsx'
 import Footer from './components/Footer.jsx'
+
+// Vistas de ruta: se cargan solo al navegar a #/obras o #/obras/XX
+const Obras = lazy(() => import('./components/Obras.jsx'))
+const ObraArticle = lazy(() => import('./components/ObraArticle.jsx'))
 
 export default function App() {
   const [hash, setHash] = useState(() => window.location.hash)
@@ -34,14 +38,19 @@ export default function App() {
     <>
       <Navbar />
       {isArticle ? (
-        <ObraArticle tag={obrasMatch[1]} />
+        <Suspense fallback={<div className="route-loading" aria-busy="true">Cargando…</div>}>
+          <ObraArticle tag={obrasMatch[1]} />
+        </Suspense>
       ) : isObras ? (
-        <Obras />
+        <Suspense fallback={<div className="route-loading" aria-busy="true">Cargando…</div>}>
+          <Obras />
+        </Suspense>
       ) : (
         <main>
           <Hero />
           <About />
           <Services />
+          <Certifications />
           <Team />
           <Office />
           <Testimonials />
@@ -51,6 +60,7 @@ export default function App() {
         </main>
       )}
       <Footer />
+      <CookieBanner />
     </>
   )
 }
