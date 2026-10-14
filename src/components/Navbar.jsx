@@ -25,7 +25,7 @@ export default function Navbar() {
     <header id="header" className="header">
       <div className="container header-inner">
         <a href="#inicio" className="brand" aria-label="Servicios Generales Nedian S.A.C.">
-          <img className="brand-logo" src="assets/logo.jpg" alt="Servicios Generales Nedian S.A.C." />
+          <img className="brand-logo" src="assets/logo.webp" alt="Servicios Generales Nedian S.A.C." />
         </a>
 
         <nav className={`main-nav${open ? ' open' : ''}`} id="mainNav" aria-label="Navegación principal">

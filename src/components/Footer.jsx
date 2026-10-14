@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="foot-grid">
             <div className="foot-brand">
               <a href="#inicio" className="brand">
-                <img className="brand-logo" src="assets/logo.jpg" alt="Servicios Generales Nedian S.A.C." />
+                <img className="brand-logo" src="assets/logo.webp" alt="Servicios Generales Nedian S.A.C." />
               </a>
               <p>
                 Construyendo en Ayacucho desde 2012. Calidad, seguridad y compromiso con

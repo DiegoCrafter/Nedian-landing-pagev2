@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section className="hero" id="inicio">
       <div className="hero-bg" aria-hidden="true">
-        <img src="assets/hero.jpg" alt="" fetchPriority="high" />
+        <img src="assets/hero.webp" alt="" fetchPriority="high" />
         <div className="hero-veil" />
       </div>
       <div className="container hero-inner">
@@ -30,8 +30,7 @@ export default function Hero() {
         </a>
 
         <h1>
-          Usamos experiencia local para entregar una construcción <em>más fuerte e inteligente</em> en
-          Ayacucho
+          Construcción y obras civiles en Ayacucho con experiencia local <em>más fuerte e inteligente</em>
         </h1>
         <p className="hero-sub">
           Desde Huanca Sancos, somos los constructores de confianza de la región desde hace más de 12

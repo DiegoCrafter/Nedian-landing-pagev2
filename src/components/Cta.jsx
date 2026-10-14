@@ -7,7 +7,7 @@ export default function Cta() {
   return (
     <section className="cta on-dark" ref={ref}>
       <div className="cta-bg" aria-hidden="true">
-        <img src="assets/cta.jpg" alt="" loading="lazy" />
+        <img src="assets/cta.webp" alt="" loading="lazy" />
         <div className="cta-veil" />
       </div>
       <div className="container cta-inner" data-reveal>
